@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    /* Basic Options */
+    // "incremental": true,                         /* Enable incremental compilation */
+    "target": "es5", /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
+    "strict": false,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "skipLibCheck": true, /* Skip type checking of declaration files. */
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@public/*": [
+        "public/*"
+      ],
+      "@state/*": [
+        "src/state/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+    },
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "noEmit": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.png",
+    "**/*.jpg",
+    "**/*.svg",
+    "**/*.jpeg",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
